@@ -30,7 +30,7 @@ namespace Novatek.Core
             }
         }
 
-        private bool _mph = false;
+        private bool _mph = true;
         public double SpeedAmount
         {
             get
