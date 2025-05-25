@@ -1140,6 +1140,12 @@ namespace NovaTrakt.ViewModel
                         }
                     }
                 }
+
+                foreach (var journey in _journeyList)
+                {
+                    var maxSpeed = journey.GPSData.OrderByDescending(x => x.SpeedAmount).FirstOrDefault().SpeedAmount;
+                    journey.MaxSpeed = maxSpeed;
+                }
             }
         }
 

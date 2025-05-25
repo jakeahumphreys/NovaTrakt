@@ -100,6 +100,9 @@
                 <DataGridTextColumn Header="At"
                                     Binding="{Binding EndTown}"
                                     IsReadOnly="True"/>
+                <DataGridTextColumn Header="Max Speed"
+                                    Binding="{Binding MaxSpeed}"
+                                    IsReadOnly="True"/>
                 <DataGridTextColumn Header="Distance"
                                     Binding="{Binding DistanceString}"
                                     IsReadOnly="True"/>

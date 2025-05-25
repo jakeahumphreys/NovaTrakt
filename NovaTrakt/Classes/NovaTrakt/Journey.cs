@@ -54,6 +54,18 @@ namespace NovaTrakt.Classes.NovaTrakt
             }
         }
 
+        private double _MaxSpeed;
+
+        public double MaxSpeed
+        {
+            get{return _MaxSpeed;}
+            set
+            {
+                _MaxSpeed = value;
+                OnPropertyChanged("MaxSpeed");
+            }
+        }
+
         // Current time from Video
         private DateTime _playTime;
         public DateTime PlayTime
